@@ -451,7 +451,7 @@ input:checked + .slider:before {
     }
 
     li {
-        width: calc(50% - 18px);
+        width: calc(50% - 13px);
     }
 
     #text-box {
