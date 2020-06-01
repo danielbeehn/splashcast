@@ -61,7 +61,7 @@ LOAD CONTENT
 function loadContent(loc) {
 	Promise.all([
 		fetchData("https://api.unsplash.com/photos/random/?query=nature&client_id=5DjUVQVPU9Qadwxu-t_7gVGyCRmRLk1rpKyntGLux5I"),
-		fetchData("http://api.weatherapi.com/v1/forecast.json?key=f1263c7d49ab471fb6500307202805&q=" + loc + "&days=1")
+		fetchData("https://api.weatherapi.com/v1/forecast.json?key=f1263c7d49ab471fb6500307202805&q=" + loc + "&days=1")
 	])
 	.then (data => {
 		image = {
