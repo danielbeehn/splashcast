@@ -69,7 +69,8 @@ function loadContent(loc) {
 			imgHD: data[0].urls.full,
 			imgAuthor: data[0].user.name,
 			imgLink: data[0].links.html,
-			authorLink: data[0].user.username
+			authorLink: data[0].user.username,
+			downloadLink: data[0].user.download_location
 		};
 		forecast = {
 			currentF: Math.round(parseInt(data[1].current.temp_f)),
@@ -107,6 +108,7 @@ DISPLAY CONTENT
 ------------------------------------------------------- */
 
 function displayContent() {
+	fetchData(image.downloadLink);
 	forecastIcon.src = forecast.wxIcon;
 	currentLoc.textContent = forecast.curLocation;
   	imgCredits.innerHTML = `<p><a href="http://www.unsplash.com/@${image.authorLink}">${image.imgAuthor}</a> on <a href="${image.imgLink}">Unsplash</a></p>`;
