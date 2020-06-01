@@ -70,7 +70,7 @@ function loadContent(loc) {
 			imgAuthor: data[0].user.name,
 			imgLink: data[0].links.html,
 			authorLink: data[0].user.username,
-			downloadLink: data[0].user.download_location
+			downloadLink: data[0].links.download_location
 		};
 		forecast = {
 			currentF: Math.round(parseInt(data[1].current.temp_f)),
