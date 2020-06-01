@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SplashCast | Your Weather, Made Beautiful</title>
+	<meta charset="UTF-8"> 
+	<link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,800i,900i&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="SplashCast">
+	<meta name="application-name" content="SplashCast">
+	<meta name="msapplication-TileColor" content="#222222">
+	<meta name="msapplication-config" content="browserconfig.xml">
+	<meta name="theme-color" content="#222222">
+        
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SplashCast | Your Weather, Made Beautiful">
+    <meta property="og:description" content="See your current weather conditions alongside beautiful images from Unsplash.">
+    <meta property="og:url" content="https://danielbeehn.github.io/splashcast">
+    <meta property="og:image" content="https://danielbeehn.github.io/splashcast/img/open-graph.jpg">        
+        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <meta name="description" content="See your current weather conditions alongside beautiful images from Unsplash.">
+	<meta name="keywords" content="weather, conditions, wx, forecast, outlook, temperature, photography, photos, photographer, photographers, nature, beauty, unsplash">
+	<meta name="author" content="Daniel Beehn">
+    <link rel="author" href="http://www.danielbeehn.com">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+	<div id="menu" class="menu-hide">
+		<div class="menu-content">
+			<h1><img src="img/logo-white.svg" alt="SplashCast">SplashCast</h1>
+			<button id="menu-close-btn"><i class="fas fa-times"></i></button>
+			<p>
+				<strong>Current Location</strong><br>
+				<span id="current-loc"></span><a href="#" id="change-loc">Change</a>
+			</p>
+			<hr>
+			<p>
+				<strong>Use Metric Units</strong>
+				<label class="switch">
+					<input type="checkbox" id="use-metric">
+					<span class="slider round"></span>
+				</label>
+			</p>
+			<hr>
+			<p>
+				<strong>Prefer HD Images</strong><br>(Loads slower)
+				<label class="switch">
+					<input type="checkbox" id="use-hd">
+					<span class="slider round"></span>
+				</label>
+			</p>
+		</div>
+		<div class="menu-footer">
+			<p>
+				Made with &hearts; and <i class="fas fa-code"></i><br>
+				<a href="http://www.github.com/danielbeehn/splashcast">View on GitHub</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- FORECAST SCREEN -->
+	<div id="forecast" class="hide-elem">
+		<div id="nav-buttons">
+			<button id="menu-toggle"><i class="fas fa-bars"></i></button>
+		</div>
+		<div id="alerts" class="alert-hide">
+			<div id="alert-container">
+				<div id="alert-header">
+					<i class="fas fa-exclamation-triangle"></i>
+					<h2>Weather Alert</h2>
+					<button id="alert-close-btn"><i class="fas fa-times"></i></button>
+				</div>
+				<div id="alert-content">
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div id="text-box">
+			<h2 id="main-heading">
+				<img id="forecast-icon">
+				<span></span>&#176;
+			</h2>
+			<ul id="weather-info">
+				<li id="feelslike">
+					<strong>Feels Like:</strong>
+					<span></span>
+				</li>
+				<li id="wind">
+					<strong>Wind:</strong>
+					<span></span>
+				</li>
+				<li id="precip">
+					<strong>Precip:</strong>
+					<span></span>
+				</li>
+				<li id="pressure">
+					<strong>Pressure:</strong>
+					<span></span>
+				</li>
+				<li id="high">
+					<strong>High:</strong>
+					<span></span>
+				</li>
+				<li id="low">
+					<strong>Low:</strong>
+					<span></span>
+				</li>
+			</ul>
+		</div>
+		<div id="img-credits"></div>
+	</div>
+
+	<div id="background" class="hide-elem">
+	</div>
+
+	<div id="intro" class="show-elem">
+		<img src="img/logo-black.svg" alt="SplashCast">
+		<p id="error">JavaScript is required for this app to continue.<br>Please enable JavaScript, then refresh the page.</p>
+		<form class="hide-elem">
+			<input type="text" id="usr-loc" name="usr-loc" placeholder="Enter city name or postal code">
+			<button id="loc-submit"><i class="fas fa-arrow-alt-circle-right"></i></button>
+		</form>
+	</div>
+
+</body>
+<script type="text/javascript" src="js/site.min.js"></script>
+<script src="https://kit.fontawesome.com/cb0ab2f187.js" crossorigin="anonymous"></script>
+</html>
