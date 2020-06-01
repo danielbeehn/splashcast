@@ -87,7 +87,7 @@ function loadContent(loc) {
 			windDir: data[1].current.wind_dir,
 			pressureIn: `${data[1].current.pressure_in} in.`,
 			pressureMb: `${data[1].current.pressure_mb} mB`,
-			wxIcon: `http:${data[1].current.condition.icon}`,
+			wxIcon: `https:${data[1].current.condition.icon}`,
 			curLocation: `${data[1].location.name}, ${data[1].location.region}`,
 			alertHeadline: data[1].alert.headline
 		};
