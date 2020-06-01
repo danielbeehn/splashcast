@@ -108,7 +108,11 @@ DISPLAY CONTENT
 ------------------------------------------------------- */
 
 function displayContent() {
-	fetch(image.downloadLink);
+	fetch(image.downloadLink, {
+		headers: {
+			'Authorization': 'Client-ID 5DjUVQVPU9Qadwxu-t_7gVGyCRmRLk1rpKyntGLux5I'
+		}
+	});
 	forecastIcon.src = forecast.wxIcon;
 	currentLoc.textContent = forecast.curLocation;
   	imgCredits.innerHTML = `<p><a href="http://www.unsplash.com/@${image.authorLink}">${image.imgAuthor}</a> on <a href="${image.imgLink}">Unsplash</a></p>`;
