@@ -108,7 +108,7 @@ DISPLAY CONTENT
 ------------------------------------------------------- */
 
 function displayContent() {
-	fetchData(image.downloadLink);
+	fetch(image.downloadLink);
 	forecastIcon.src = forecast.wxIcon;
 	currentLoc.textContent = forecast.curLocation;
   	imgCredits.innerHTML = `<p><a href="http://www.unsplash.com/@${image.authorLink}">${image.imgAuthor}</a> on <a href="${image.imgLink}">Unsplash</a></p>`;
