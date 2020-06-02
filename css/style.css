@@ -301,6 +301,8 @@ input:checked + .slider:before {
     font-size: 28px;
     background-color: transparent;
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 #menu-toggle {
@@ -319,7 +321,7 @@ input:checked + .slider:before {
     width: 100%;
     max-width: 620px;
     left: 0;
-    padding: 25px;
+    padding: 0 15px;
 }
 
 #footer {
@@ -461,12 +463,14 @@ input:checked + .slider:before {
 
     #img-credits {
         width: 100%;
-        right: -42px;
-        text-align: left;
+    ight: initial;
+    text-align: left;
+    left: 0;
+    padding: 10px 25px;
     }
 
     #weather-info {
-        width: calc(100% - 60px);
+        width: calc(100% - 40px);
     }
 
     #alerts {
