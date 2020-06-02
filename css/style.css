@@ -497,6 +497,10 @@ input:checked + .slider:before {
         font-size: 54px;
     }
 
+    #intro img {
+        max-width: 75px;
+    }
+
     #usr-loc, #img-credits p {
         font-size: 14px;
     }
