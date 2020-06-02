@@ -462,11 +462,11 @@ input:checked + .slider:before {
     }
 
     #img-credits {
-        width: 100%;
-    ight: initial;
+    width: 100%;
+    right: initial;
     text-align: left;
     left: 0;
-    padding: 10px 25px;
+    padding: 0 25px;
     }
 
     #weather-info {
