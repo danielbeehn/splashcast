@@ -335,7 +335,7 @@ input:checked + .slider:before {
 
 #img-credits {
     position: fixed;
-    bottom: 30px;
+    bottom: 8px;
     right: 30px;
     text-align: right;
     color: #fff;
@@ -453,7 +453,7 @@ input:checked + .slider:before {
     }
 
     #text-box {
-        bottom: 120px;
+        bottom: 85px;
         max-width: 100%;
     }
 
