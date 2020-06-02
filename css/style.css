@@ -477,7 +477,7 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 500px) {
 
-    body {
+    html, body {
         font-size: 14px;
     }
 
@@ -485,7 +485,7 @@ input:checked + .slider:before {
         font-size: 54px;
     }
 
-    #usr-loc {
+    #usr-loc, #img-credits p {
         font-size: 14px;
     }
 
@@ -509,6 +509,10 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-height: 720px) and (orientation: landscape) {
+
+    html, body {
+        font-size: 16px;
+    }
 
     #intro img {
         max-width: 75px;
@@ -538,6 +542,10 @@ input:checked + .slider:before {
 
     #img-credits {
         margin: 65px 0;
+    }
+
+    #img-credits p {
+        font-size: 16px;
     }
 
     .menu-footer, #nav-buttons, #text-box, #img-credits {
