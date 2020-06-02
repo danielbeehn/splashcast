@@ -200,7 +200,6 @@ li {
     float: right;
 }
 
- /* The switch - the box around the slider */
  .switch {
     position: relative;
     display: inline-block;
@@ -208,15 +207,13 @@ li {
     width: 60px;
     height: 24px;
 }
-  
-  /* Hide default HTML checkbox */
+
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-  
-  /* The slider */
+
 .slider {
     position: absolute;
     cursor: pointer;
@@ -242,10 +239,9 @@ li {
     transition: .4s;
 }
 
-/* Rounded sliders */
 .slider.round {
     border-radius: 34px;
-  }
+}
   
 input:checked + .slider {
     background-color: #2196F3;
@@ -457,16 +453,16 @@ input:checked + .slider:before {
     }
 
     #text-box {
-        bottom: 100px;
+        bottom: 120px;
         max-width: 100%;
     }
 
     #img-credits {
-    width: 100%;
-    right: initial;
-    text-align: left;
-    left: 0;
-    padding: 0 25px;
+        width: 100%;
+        right: initial;
+        text-align: left;
+        left: 0;
+        padding: 0 25px;
     }
 
     #weather-info {
@@ -530,6 +526,10 @@ input:checked + .slider:before {
         height: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
+    }
+
+    #text-box {
+        bottom: 100px;
     }
 
     #main-heading {
