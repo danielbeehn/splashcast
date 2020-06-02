@@ -342,6 +342,13 @@ input:checked + .slider:before {
     width: 500px;
 }
 
+#img-credits p {
+    font-size: 16px;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+}
+
 #img-credits a {
     color: #fff;
 }
