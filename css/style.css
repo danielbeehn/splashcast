@@ -537,7 +537,7 @@ input:checked + .slider:before {
     }
 
     #img-credits {
-        margin: 25px 0 25px 35px;
+        margin: 65px 0;
     }
 
     .menu-footer, #nav-buttons, #text-box, #img-credits {
