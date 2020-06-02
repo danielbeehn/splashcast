@@ -450,10 +450,12 @@ input:checked + .slider:before {
 
     li {
         width: calc(50% - 24px);
+        margin: 0 12px;
     }
 
     #text-box {
         bottom: 120px;
+        left: 0;
         max-width: 100%;
     }
     
