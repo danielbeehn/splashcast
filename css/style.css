@@ -449,12 +449,16 @@ input:checked + .slider:before {
     }
 
     li {
-        width: calc(50% - 13px);
+        width: calc(50% - 24px);
     }
 
     #text-box {
-        bottom: 85px;
+        bottom: 120px;
         max-width: 100%;
+    }
+    
+    #main-heading {
+        margin-bottom: 0;
     }
 
     #img-credits {
@@ -462,11 +466,12 @@ input:checked + .slider:before {
         right: initial;
         text-align: left;
         left: 0;
-        padding: 0 25px;
+        padding: 0 18px;
     }
 
     #weather-info {
-        width: calc(100% - 40px);
+        width: calc(100% - 10px);
+        margin: 0 auto;
     }
 
     #alerts {
@@ -504,6 +509,12 @@ input:checked + .slider:before {
 
     .menu-hide {
         left: -600px;
+    }
+
+    #text-box {
+        left: 0;
+        padding: 0;
+        bottom: 100px;
     }
 
 }
