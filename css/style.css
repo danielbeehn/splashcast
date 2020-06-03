@@ -498,7 +498,7 @@ input:checked + .slider:before {
     }
 
     #intro img {
-        max-width: 75px;
+        max-width: 115px;
     }
 
     #usr-loc, #img-credits p {
@@ -559,7 +559,8 @@ input:checked + .slider:before {
     }
 
     #img-credits {
-        margin: 65px 0;
+        margin: 65px 25px;
+        text-align: left;
     }
 
     #img-credits p {
