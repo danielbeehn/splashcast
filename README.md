@@ -23,7 +23,7 @@ Upon launching the app for the first time, you will be prompted to enter the nam
 
 After the initial setup, individual app settings can be changed by clicking on the menu button in the top left corner of the screen. The available settings are as follows:
 
-<img src="https://danielbeehn.github.io/splashcast/img/settings.jpg" style="text-align: center;">
+<img src="https://danielbeehn.github.io/splashcast/img/settings.jpg" style="display: block; margin: 0 auto; width: 300px; height: auto;">
 
 1. *Current Location* - Displays the current location, and allows you change it by running the initial setup again.
 2. *Use Metric Units* - If enabled, displays forecast information in metric units.
