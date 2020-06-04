@@ -317,10 +317,10 @@ input:checked + .slider:before {
 
 #text-box {
     position: absolute;
-    bottom: 55px;
+    bottom: 45px;
     width: 100%;
     max-width: 620px;
-    left: 0;
+    left: 5px;
     padding: 0 12px;
 }
 
