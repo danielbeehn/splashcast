@@ -4,7 +4,7 @@
 	<title>SplashCast | Your Weather, Made Beautiful</title>
 	<meta charset="UTF-8"> 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,800i,900i&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -25,7 +25,7 @@
     <meta property="og:image" content="https://danielbeehn.github.io/splashcast/img/open-graph.jpg">        
         
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         
     <meta name="description" content="See your current weather conditions alongside beautiful images from Unsplash.">
 	<meta name="keywords" content="weather, conditions, wx, forecast, outlook, temperature, photography, photos, photographer, photographers, nature, beauty, unsplash">
@@ -71,54 +71,87 @@
 
 	<!-- FORECAST SCREEN -->
 	<div id="forecast" class="hide-elem">
-		<div id="nav-buttons">
-			<button id="menu-toggle"><i class="fas fa-bars"></i></button>
+		<div id="top-bar">
+			<span class="top-bar-left">
+				<button id="menu-toggle"><i class="fas fa-bars"></i></button>
+				<h4></h4>
+			</span>
+			<span class="top-bar-right">
+				<button id="refresh-toggle"><i class="fas fa-redo-alt"></i></button>
+			</span>
 		</div>
-		<div id="alerts" class="alert-hide">
-			<div id="alert-container">
-				<div id="alert-header">
-					<i class="fas fa-exclamation-triangle"></i>
-					<h2>Weather Alert</h2>
-					<button id="alert-close-btn"><i class="fas fa-times"></i></button>
+		<div id="content">
+			<div id="home" style="width: 100%; height: 100%; display: flex; flex-direction: column;">
+				<div id="temp">
+					<img style="display: block;">
+					<h3></h3>
+					<h2><span></span>&#176;</h2>
+					<p><strong>Last Updated:</strong> <span></span></p>
 				</div>
-				<div id="alert-content">
-					<p></p>
+				<div id="alerts" class="hide-elem">
+					<button><i class="fas fa-exclamation-triangle"></i><span></span><i class="fas fa-angle-down caret"></i></button>
+					<div id="alert-text" class="hide-elem" style="display: none;"></div>
+				</div>
+				<div id="cond" style="border-top: 1px rgba(255,255,255,.5) solid; border-bottom: 1px rgba(255,255,255,.5) solid;">
+					<ul>
+						<li id="wind"><h4>Wind</h4><span></span></li>
+						<li id="precip"><h4>Precip</h4><span></span></li>
+						<li id="pressure"><h4>Pressure</h4><span></span></li>
+						<li id="feelslike"><h4>Feels Like</h4><span></span></li>
+					</ul>
+				</div>
+				<div id="fiveday">
+					<ul>
+						<li id="day1">
+							<h4></h4>
+							<img>
+							<span></span>
+						</li>
+						<li id="day2">
+							<h4></h4>
+							<img>
+							<span></span>
+						</li>
+						<li id="day3">
+							<h4></h4>
+							<img>
+							<span></span>
+						</li>
+						<li id="day4">
+							<h4></h4>
+							<img>
+							<span></span>
+						</li>
+						<li id="day5">
+							<h4></h4>
+							<img>
+							<span></span>
+						</li>
+					</ul>
+				</div>
+				<div id="img-credits">
+					<p><span class="img-link"></span> by <span class="img-author"></span></p>
+				</div>
+			</div>
+			<div id="wx-info" style="margin-top: 10px;">
+				<div id="current">
+					<ul id="conditions" class="hide-elem">
+						<li id="feelslike">
+							<strong>Feels Like:</strong>
+							<span></span>
+						</li>
+						<li id="high">
+							<strong>High:</strong>
+							<span></span>
+						</li>
+						<li id="low">
+							<strong>Low:</strong>
+							<span></span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-		<div id="text-box">
-			<h2 id="main-heading">
-				<img id="forecast-icon">
-				<span></span>&#176;
-			</h2>
-			<ul id="weather-info">
-				<li id="feelslike">
-					<strong>Feels Like:</strong>
-					<span></span>
-				</li>
-				<li id="wind">
-					<strong>Wind:</strong>
-					<span></span>
-				</li>
-				<li id="precip">
-					<strong>Precip:</strong>
-					<span></span>
-				</li>
-				<li id="pressure">
-					<strong>Pressure:</strong>
-					<span></span>
-				</li>
-				<li id="high">
-					<strong>High:</strong>
-					<span></span>
-				</li>
-				<li id="low">
-					<strong>Low:</strong>
-					<span></span>
-				</li>
-			</ul>
-		</div>
-		<div id="img-credits"></div>
 	</div>
 
 	<div id="background" class="hide-elem">
@@ -126,14 +159,14 @@
 
 	<div id="intro" class="show-elem">
 		<img src="img/logo-black.svg" alt="SplashCast">
-		<p id="error"><noscript>JavaScript is required for this app to continue.<br>Please enable JavaScript, then refresh the page.</noscript></p>
+		<p><noscript>JavaScript is required for this app to continue.<br>Please enable JavaScript, then refresh the page.</noscript></p>
 		<form class="hide-elem">
-			<input type="text" id="usr-loc" name="usr-loc" placeholder="Enter city name or postal code">
-			<button id="loc-submit"><i class="fas fa-arrow-alt-circle-right"></i></button>
+			<input type="text" name="usr-loc" placeholder="Enter city name or postal code">
+			<button><i class="fas fa-arrow-alt-circle-right"></i></button>
 		</form>
 	</div>
 
 </body>
-<script type="text/javascript" src="js/site.min.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
 <script src="https://kit.fontawesome.com/cb0ab2f187.js" crossorigin="anonymous"></script>
 </html>
