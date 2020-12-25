@@ -485,7 +485,7 @@ h2 span {
 }
 
 #fiveday ul li img {
-    width: 70px;
+    width: 50px;
     height: auto;
     position: relative;
     left: -105px;
@@ -593,6 +593,14 @@ h2 span {
         padding: 65px 0;
     }
 
+    #temp h2 {
+        margin: 10px 0 15px;
+    }
+
+    #alerts button {
+        font-size: 18px;
+    }
+
     #cond ul {
         flex-direction: column;
         text-align: left;
@@ -620,7 +628,7 @@ h2 span {
     }
 
     #fiveday ul li img {
-        width: 140px;
+        width: 50px;
         left: 0;
     }
 
