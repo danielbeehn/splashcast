@@ -5,13 +5,14 @@
 ## Table of Contents
 - [About This App](#about)
 - [Settings](#settings)
+- [Release History](#history)
 - [Legal Info](#legal)
 
 <a name="about"></a>
 
 ## About This App
 
-Welcome to the GitHub repository for **SplashCast**, a web app that provides you with a current, localized weather forecast alongside beautiful images from the many photographers and contributers at [Unsplash](https:/www.unsplash.com/).
+Welcome to the GitHub repository for **SplashCast**, a web app that provides you with a localized weather forecast alongside beautiful images from the many photographers and contributers at [Unsplash](https:/www.unsplash.com/).
 
 For quicker access, add this app to your device's home screen! See instructions for [iPhone](https://ios.gadgethacks.com/how-to/safari-101-save-website-webpage-your-home-screen-for-instant-access-0182580/) or [Android](https://www.greenbot.com/article/3041304/android/how-to-add-a-web-site-to-your-android-home-screen-with-chrome.html).
 
@@ -30,6 +31,14 @@ After the initial setup, individual app settings can be changed by clicking on t
 3. *Prefer HD Images* - Will display higher-quality (but slower loading) backgrounds for use on HD displays.
 
 More features and settings are planned for later releases!
+
+<a name="history"></a>
+
+## Release History
+
+*Dec 24, 2020* - Version 2.0 release. Features include a new app design, along with a 5-day forecast and the ability to refresh the weather forecast independently of the background image.
+
+*June 1, 2020* - Initial 1.0 release. Features include current weather conditions, along with the ability to switch between metric/imperial units, and SD/HD images.
 
 <a name="legal"></a>
 
