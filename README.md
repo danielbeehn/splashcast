@@ -36,6 +36,8 @@ More features and settings are planned for later releases!
 
 ## Release History
 
+*Dec 25, 2020* - Version 2.0.1 release. Made slight improvements to mobile design.
+
 *Dec 24, 2020* - Version 2.0 release. Features include a new app design, along with a 5-day forecast and the ability to refresh the weather forecast independently of the background image.
 
 *June 1, 2020* - Initial 1.0 release. Features include current weather conditions, along with the ability to switch between metric/imperial units, and SD/HD images.
