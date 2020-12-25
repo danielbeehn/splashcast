@@ -26,7 +26,7 @@ LOAD CONTENT
 function loadContent(loc) {
 	document.querySelector("#intro img").classList.add("rotate");
 	Promise.all([
-		fetchData("https://api.unsplash.com/photos/random/?query=nature&client_id=5DjUVQVPU9Qadwxu-t_7gVGyCRmRLk1rpKyntGLux5I"),
+		fetchData("https://api.unsplash.com/photos/random/?client_id=5DjUVQVPU9Qadwxu-t_7gVGyCRmRLk1rpKyntGLux5I"),
 		fetchData("https://api.weatherapi.com/v1/forecast.json?key=f1263c7d49ab471fb6500307202805&q=" + loc + "&days=5")
 	])
 	.then (data => {
