@@ -53,8 +53,8 @@ function loadContent(loc) {
 			currentCond: data[1].current.condition.text,
 			wxIcon: `https:${data[1].current.condition.icon}`,
 			curLocation: `${data[1].location.name}, ${data[1].location.region}`,
-			alertEvent: data[1].alert.event,
-			alertDesc: data[1].alert.desc
+			alertEvent: data[1].alerts.alert.event,
+			alertDesc: data[1].alerts.alert.desc
 		};
 		day1Forecast = {
 			wxIcon: `https:${data[1].forecast.forecastday[0].day.condition.icon}`,
