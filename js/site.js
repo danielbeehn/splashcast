@@ -6,6 +6,7 @@ let image = "";
 let forecast = "";
 let imgSD = "";
 let imgHD = "";
+let isAlert = "";
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -53,8 +54,14 @@ function loadContent(loc) {
 			currentCond: data[1].current.condition.text,
 			wxIcon: `https:${data[1].current.condition.icon}`,
 			curLocation: `${data[1].location.name}, ${data[1].location.region}`,
-			alertEvent: data[1].alerts.alert.event,
-			alertDesc: data[1].alerts.alert.desc
+			alert: (function checkAlert() {
+				if (data[1].alerts === undefined) {
+					isAlert = false;
+				}
+				else {
+					return data[1].alerts
+				}
+			})
 		};
 		day1Forecast = {
 			wxIcon: `https:${data[1].forecast.forecastday[0].day.condition.icon}`,
@@ -170,10 +177,10 @@ function displayContent() {
 	document.querySelector("#day5 img").src = getWxIcon(day5Forecast.wxIcon);
 	document.querySelector("#day5 img").alt = day5Forecast.wxCond;
 
-  	if (forecast.alertEvent !== undefined) {
-		document.querySelector("#alerts button span").textContent = forecast.alertEvent;
+  	if (isAlert === false) {
+		document.querySelector("#alerts button span").textContent = forecast.alert.alert.event;
 		document.querySelector("#alerts").className = "show-elem"; 
-		document.querySelector("#alert-text").textContent = forecast.alertDesc;
+		document.querySelector("#alert-text").textContent = forecast.alert.alert.event;
  	}
 
  	if (localStorage.units === "f" || localStorage.units === undefined) {
