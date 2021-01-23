@@ -36,7 +36,7 @@ More features and settings are planned for later releases!
 
 ## Release History
 
-*Jan 23, 2020* - Verison 2.0.3 relase. Corrected further issues with loading. The issue stems from the weather API used not sending alert data as part of the forecast. Will continue to investigate and hope to restore alert information soon.
+*Jan 23, 2020* - Verison 2.0.3 release. Corrected further issues with loading. The issue stems from the weather API used not sending alert data as part of the forecast. Will continue to investigate and hope to restore alert information soon.
 
 *Jan 20, 2020* - Version 2.0.2 release. Fixed issue with app unable to load.
 
