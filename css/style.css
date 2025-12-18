@@ -92,6 +92,9 @@ ul {
     width: 85%;
     font-size: 1.2rem;
 }
+#intro #intro-text .logo {
+    margin-top: -100px;
+}
 #intro .logo {
     width: 100%;
     max-width: 150px;
@@ -121,7 +124,7 @@ ul {
     max-width: 800px;
 }
 #intro #search-open {
-    margin-top: 60px;
+    margin: 60px 25px 0;
     width: 100%;
     max-width: 400px;
     padding: 15px;
@@ -371,6 +374,10 @@ input:checked + .slider:before {
     font-size: 25px;
     font-weight: 700;
     margin-top: -7px;
+    width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #menu button,
 #top-bar button {
