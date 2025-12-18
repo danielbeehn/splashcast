@@ -36,7 +36,7 @@ More features and settings are planned for later releases!
 
 ## Release History
 
-*Dec 18, 2025* - Version 3 release. A streamlined codebase helps the app load faster, and the app features a brand-new, modern design with an improved welcome experience, glass effects and animated graphics.
+*Dec 18, 2025* - Version 3.0 release. A streamlined codebase helps the app load faster, and the app features a brand-new, modern design with an improved welcome experience, glass effects and animated graphics.
 
 *Jan 23, 2020* - Version 2.0.3 release. Corrected further issues with loading. The issue stems from the weather API used not sending alert data as part of the forecast. Will continue to investigate and hope to restore alert information soon.
 
@@ -53,5 +53,7 @@ More features and settings are planned for later releases!
 ## Legal
 
 Background images provided by [Unsplash](https:/www.unsplash.com/).
+
 Weather forecast provided by [WeatherAPI](https:/www.weatherapi.com/).
+
 Forecast icons provide by [Basmilius](https://github.com/basmilius/weather-icons).

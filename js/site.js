@@ -272,7 +272,6 @@ dom.changeLoc.addEventListener("click", e => {
 });
 
 dom.refreshBtn.addEventListener('click', function() {
-	this.classList.add("rotate");
 	loadContent(localStorage.location);
 });
 
