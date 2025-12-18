@@ -92,14 +92,11 @@ ul {
     width: 85%;
     font-size: 1.2rem;
 }
-#intro #intro-text .logo {
-    margin-top: -100px;
-}
 #intro .logo {
     width: 100%;
     max-width: 150px;
     height: auto;
-    margin: 0 auto;
+    margin: -100px auto 0;
 }
 #intro #intro-text,
 #intro #loading-text {
