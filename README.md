@@ -20,7 +20,7 @@ For quicker access, add this app to your device's home screen! See instructions 
 
 ## Settings
 
-Upon launching the app for the first time, you will be prompted to enter the name or postal code for your location. Currently, I recommend using your postal code when possible, as the weather API currently does not do a good job of differentiating between locations that share a name (I'm looking into this).
+Upon launching the app for the first time, you will be prompted to enter the name or postal code for your location.
 
 After the initial setup, individual app settings can be changed by clicking on the menu button in the top left corner of the screen. The available settings are as follows:
 
