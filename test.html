@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=f1263c7d49ab471fb6500307202805&q=62565&days=5&aqi=yes&alerts=yes`;
+
+async function fetchWeatherData() {
+    try {
+        const response = await fetch(apiUrl);
+
+        if (!response.ok) {
+            throw new Error(`Error fetching weather data: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        console.log('Weather Data:', data);
+    } catch (error) {
+        console.error('An error occurred:', error);
+    }
+}
+
+fetchWeatherData();
+</script>
+
+</head>
+<body></body>
+</html>

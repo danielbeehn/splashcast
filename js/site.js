@@ -115,6 +115,7 @@ DISPLAY CONTENT
 -------------------- */
   
   function displayContent() {
+	console.log(state.forecast);
 	fetch(state.image.download, { headers: { Authorization: "Client-ID 5DjUVQVPU9Qadwxu-t_7gVGyCRmRLk1rpKyntGLux5I" }});
   
 	const now = new Date();
